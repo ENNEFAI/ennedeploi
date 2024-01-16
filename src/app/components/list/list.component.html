@@ -1,0 +1,18 @@
+<input
+  type="text"
+  class="input-list-name"
+  [(ngModel)]="list.name"
+  (keyup.enter)="this.updateList()"
+  (focusout)="getListById()"
+/>
+<div class="list-header">
+  <div title="Remove list" class="remove-list-button" (click)="removeList()">
+    Remove list <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+  </div>
+  <div class="add-card-button" (click)="addCard()">
+    Add card <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="card" *ngFor="let card of cards">
+  <app-card [card]="card"></app-card>
+</div>

@@ -1,0 +1,22 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "src/app/components/projects/projects.component.spec.ts": true,
+    "src/app/components/list/list.component.spec.ts": true,
+    "src/app/components/card/card.component.spec.ts": true,
+    "src/app/components/auth/auth.component.spec.ts": true
+  },
+  "hide-files.files": [
+    "src/app/components/projects/projects.component.spec.ts",
+    "src/app/components/list/list.component.spec.ts",
+    "src/app/components/card/card.component.spec.ts",
+    "src/app/components/auth/auth.component.spec.ts"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/309bc642-ef0f-4fae-bbaf-e0ea3bd2465e/resourceGroups/trelloHuguesdeVregille_group/providers/Microsoft.Web/sites/trelloHuguesdeVregille",
+  "appService.deploySubpath": "dist"
+}

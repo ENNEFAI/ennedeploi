@@ -1,0 +1,19 @@
+name: Trello Workflow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Node install
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: 18.17.1
+      - name: Package install
+        run: npm i
+      - name: Build
+        run: npx ng build
